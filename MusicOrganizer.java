@@ -58,10 +58,13 @@ public class MusicOrganizer
     public void listAllFiles()
     {
         int longi = files.size();
-        for(int cont = 0; cont < longi; cont++) {
+        int cont = 0;
+        do 
+        {
             String cancion = files.get(cont);
             System.out.println(cancion);
-        }
+            cont++;
+        }while (cont < longi);
     }
     
     /**
